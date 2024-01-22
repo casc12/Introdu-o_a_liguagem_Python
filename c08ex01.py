@@ -1,23 +1,23 @@
 
-        a = []\n
-        b = []\n
+        a = []
+        b = []
         
         
         print("Exemplo de checagem de índice\n")
         
-        #Entrada de dados\n
+        #Entrada de dados
         
         for i in range(10):
-          valor = int(input("Entre como {0:2}º valor: \".format(i+1)))
+          valor = int(input("Entre como {0:2}º valor: ".format(i+1)))
           a.append(valor)
            #print(a[i])
         
-        #Processamento par ou impar\n
+        #Processamento par ou impar
         
-        print()\n
+        print()
         for i in range(10):
           if( i % 2 == 0):
-            b.append(a[i] * 5)\n",
+            b.append(a[i] * 5),
           else:
             b.append(a[i] + 5)
         
@@ -28,8 +28,8 @@
           print("A[{0:2}] = {1:4} na posição {2:2}.".format(i + 1, a[i], i ))
         
         print()
-        for i in range(10):\n
-          print("B[{0:2}] = {1:4} na  posição {2:2}\".format(i + 1, b[i], i))
+        for i in range(10):
+          print("B[{0:2}] = {1:4} na  posição {2:2}".format(i + 1, b[i], i))
         
         enter = input("\nPressione <Enter> para encerrar ...")
       
