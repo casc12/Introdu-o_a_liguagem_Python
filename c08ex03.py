@@ -7,7 +7,7 @@ print("Somatório de valores informados")
 i = 0\n
 resp = 'S'
 while(resp.upper() == 'S'):
-  a.append(float(input(\"\\nEntre o {3.0})o. valor: \".format(i+1))))
+  a.append(float(input(\"\\nEntre o {0:3})o. valor: \".format(i+1))))
   s += a[i]
   i += 1
   print()
