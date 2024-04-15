@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyP45iKuuhehWFkDsb/AJ0q7",
+      "authorship_tag": "ABX9TyNa9i6234+4kztZ0GDZ/kV8",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 16,
+      "execution_count": 20,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "Cbh9h9bc5Dln",
-        "outputId": "012b9c01-3400-46f1-e55c-e4f7995a368a"
+        "outputId": "fb84186b-791b-4f9a-b0bd-efb4ee0757f1"
       },
       "outputs": [
         {
@@ -50,7 +50,11 @@
             "1\n",
             "7\n",
             "[2, 4, 6, 8]\n",
-            "[2, 4, 9, 8]\n"
+            "[2, 4, 9, 8]\n",
+            "[11, 22, 33, 44, 55]\n",
+            "[11, 22, 33, 44, 55]\n",
+            "[99, 22, 33, 44, 55, 66, 'alo']\n",
+            "[99, 22, 33, 44, 55, 66, 'alo']\n"
           ]
         }
       ],
@@ -89,6 +93,21 @@
         "print(lista3)\n",
         "lista3[2]=9\n",
         "print(lista3)\n",
+        "\n",
+        "\n",
+        "# trabalhando com a lista4 & lista5, copias com lista cópia espelhada\n",
+        "lista4 = [11,22,33,44,55]\n",
+        "print(lista4)\n",
+        "#lista5 vai receber lista4 e vai refencia a mesma memoria tb\n",
+        "lista5 = lista4\n",
+        "print(lista5)\n",
+        "lista4.append(66)\n",
+        "lista4[0] = 99\n",
+        "lista5.append('alo')\n",
+        "print(lista4)\n",
+        "print(lista5)\n",
+        "\n",
+        "# trabalhando com a lista6 & lista7 , cópia independente\n",
         "\n"
       ]
     }
