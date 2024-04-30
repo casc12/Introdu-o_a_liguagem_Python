@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOX0gxoYBZP0yrzuv6SJVKM",
+      "authorship_tag": "ABX9TyPGMy0BDvEf/4biFuIVSAKT",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 35,
+      "execution_count": 16,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "Cbh9h9bc5Dln",
-        "outputId": "60b18cd9-ebf8-445a-a861-e63f84d4ec29"
+        "outputId": "6c97ef6b-f086-4f92-8b93-70839f48b437"
       },
       "outputs": [
         {
@@ -79,7 +79,11 @@
             "[9, 8, 7, 6, 5, 4, [3, 2, 1]]\n",
             "7\n",
             "['Augusto', 'Maria', 'Mario', 'Silvia', 'Silvio']\n",
-            "['Silvio', 'Silvia', 'Mario', 'Maria', 'Augusto']\n"
+            "['Silvio', 'Silvia', 'Mario', 'Maria', 'Augusto']\n",
+            "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+            "\n",
+            "Comando\n",
+            "\n"
           ]
         }
       ],
@@ -201,7 +205,19 @@
         "#trabalhando com lista14, usando o short para autera a ordem de exibição usando o reverse\n",
         "lista14 = [\"Silvio\",\"Maria\",\"Silvia\",\"Mario\",\"Augusto\"]\n",
         "lista14.sort(reverse= True)\n",
-        "print(lista14)"
+        "print(lista14)\n",
+        "\n",
+        "#trabalhando com lista15, usando o sorted() para auterar a ordem de exibição usando reverse\n",
+        "lista15 = [8,2,6,4,0,9,1,3,7,5]\n",
+        "# print(lista15)\n",
+        "# print(\" 12 \")\n",
+        "\n",
+        "#organizando a lista\n",
+        "x = sorted(lista15)\n",
+        "print(x)\n",
+        "print(\"\\nComando\\n\")\n",
+        "# ordem inversa numerica\n",
+        "#sorted(lista15, reverse= True)"
       ]
     }
   ]
