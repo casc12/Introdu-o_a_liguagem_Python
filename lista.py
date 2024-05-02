@@ -1,153 +1,48 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyOYps5aIyVDBpuwf1FVjk7n",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/casc12/Introdu-o_a_liguagem_Python/blob/Cap08/lista.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 16,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "Cbh9h9bc5Dln",
-        "outputId": "2a8ef667-3df0-41bc-f8e5-9b552274b1fa"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "[1, 2, 3, 4, 5]\n",
-            "2\n",
-            "5\n",
-            "<class 'list'>\n",
-            "5\n",
-            "9\n",
-            "1\n",
-            "7\n",
-            "[2, 4, 6, 8]\n",
-            "[2, 4, 9, 8]\n",
-            "[11, 22, 33, 44, 55]\n",
-            "[11, 22, 33, 44, 55]\n",
-            "[99, 22, 33, 44, 55, 66, 'alo']\n",
-            "[99, 22, 33, 44, 55, 66, 'alo']\n",
-            "['a', 'b', 'c']\n",
-            "['x', 'b', 'c', 'd']\n",
-            "['a', 'b', 'c', 'z']\n",
-            "['a', 'b', 'c', 'd', 'e', 'f']\n",
-            "['a', 'b', 'c', 'd', 'e', 'f', 'a', 'b', 'c', 'd', 'e', 'f', 'a', 'b', 'c', 'd', 'e', 'f']\n",
-            "[3, 4, 5]\n",
-            "[1, 2, 3, 4, 5]\n",
-            "[3, 4, 5, 6, 7, 8, 9, 0]\n",
-            "[6, 7]\n",
-            "[1, 2, 3, 4, 5, 6, 7]\n",
-            "[6, 7, 8, 9, 0]\n",
-            "[]\n",
-            "[1, 2, 3, 4, 5]\n",
-            "[1, 2, 3, 4, 5, 'a']\n",
-            "[1, 2, 3, 4, 5, 'a', 'b']\n",
-            "[1, 2, 3, 4, 5, 'a', 'b', 6, 7, 8, 9, 0]\n",
-            "[]\n",
-            "[9]\n",
-            "[9, 8]\n",
-            "[9, 8, 7]\n",
-            "[9, 8, 7, 6, 5, 4]\n",
-            "[9, 8, 7, 6, 5, 4, [3, 2, 1]]\n",
-            "7\n",
-            "['Augusto', 'Maria', 'Mario', 'Silvia', 'Silvio']\n",
-            "['Silvio', 'Silvia', 'Mario', 'Maria', 'Augusto']\n",
-            "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
-            "\n",
-            "Comando\n",
-            "\n",
-            "5\n",
-            "[11, 22, 33, 44, 66, 77, 88, 99]\n",
-            "[11, 22, 33, 66, 77, 88, 99]\n",
-            "[11, 22, 33, 66, 99]\n",
-            "[]\n",
-            "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n",
-            "[2, 4, 6, 8, 10, 12, 14, 16, 18]\n",
-            "20\n",
-            "[2, 4, 6, 8, 12, 14, 16, 18]\n",
-            "10\n",
-            "['a', 'b', 'c', 'd', 'e', 'f', 'g']\n",
-            "['a', 'b', 'c', 'e', 'f', 'g']\n",
-            "[1, 2, 6, 24, 120]\n",
-            "[1, 2, 3, 'quatro', 'cinco', 'seis']\n",
-            "3\n"
-          ]
-        }
-      ],
-      "source": [
-        "import math\n",
-        "lista1 = [1,2,3,4,5]\n",
-        "\n",
-        "#chamando a lista1\n",
-        "print(lista1)\n",
-        "\n",
-        "#pegando o segundo elemento da lista\n",
-        "print(lista1[1])\n",
-        "\n",
-        "#pegando o quinto elemento da lista\n",
-        "print(lista1[4])\n",
-        "\n",
-        "#saber o tipo de objeto python\n",
-        "print(type(lista1))\n",
-        "\n",
-        "#erro de indexação posição inexistente na lista\n",
-        "#print(lista1[5])\n",
-        "\n",
-        "\n",
-        "#trabalhando com a lista2\n",
-        "lista2 = [1,3,5,7,9]\n",
-        "print(lista2[2])\n",
-        "#usando um index negtivo\n",
-        "print(lista2[-1])\n",
-        "#pegando o valor da primeira posição da lista\n",
-        "print(lista2[0])\n",
-        "\n",
-        "#pegando um valor negativo\n",
-        "print(lista2[-2])\n",
-        "\n",
-        "#tabalhando com a lista3, em que se mostra que os valores dentro de uma poisção ou index podem ser trocados\n",
-        "lista3 = [2,4,6,8]\n",
-        "print(lista3)\n",
-        "lista3[2]=9\n",
-        "print(lista3)\n",
-        "\n",
-        "\n",
-        "# trabalhando com a lista4 & lista5, copias com lista cópia espelhada\n",
-        "lista4 = [11,22,33,44,55]\n",
-        "print(lista4)\n",
-        "#lista5 vai receber lista4 e vai refencia a mesma memoria tb\n",
-        "lista5 = lista4\n",
-        "print(lista5)\n",
-        "lista4.append(66)\n",
-        "lista4[0] = 99\n",
+import math
+lista1 = [1,2,3,4,5]
+      
+#chamando a lista1
+print(lista1)
+       
+#pegando o segundo elemento da lista
+print(lista1[1])
+      
+#pegando o quinto elemento da lista\n",
+print(lista1[4])
+        
+#saber o tipo de objeto python,
+print(type(lista1))\n",
+        
+#erro de indexação posição inexistente na lista
+#print(lista1[5])
+       
+        
+#trabalhando com a lista2
+lista2 = [1,3,5,7,9]
+print(lista2[2])
+#usando um index negtivo
+print(lista2[-1])\n",
+#pegando o valor da primeira posição da lista
+print(lista2[0])
+        
+#pegando um valor negativo
+print(lista2[-2])\n",
+      
+#tabalhando com a lista3, em que se mostra que os valores dentro de uma poisção ou index podem ser trocados
+lista3 = [2,4,6,8]
+print(lista3)
+lista3[2]=9
+print(lista3)
+       
+       
+# trabalhando com a lista4 & lista5, copias com lista cópia espelhada
+lista4 = [11,22,33,44,55]
+print(lista4)
+#lista5 vai receber lista4 e vai referênciar a mesma memoria tb
+lista5 = lista4
+print(lista5)
+lista4.append(66)
+lista4[0] = 99
         "lista5.append('alo')\n",
         "print(lista4)\n",
         "print(lista5)\n",
