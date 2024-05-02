@@ -43,35 +43,35 @@ lista5 = lista4
 print(lista5)
 lista4.append(66)
 lista4[0] = 99
-        "lista5.append('alo')\n",
-        "print(lista4)\n",
-        "print(lista5)\n",
-        "\n",
-        "# trabalhando com a lista6 & lista7 , cópia independente\n",
-        "lista6 = [\"a\",\"b\",\"c\"]\n",
-        "print(lista6)\n",
-        "lista7 = lista6[:]\n",
-        "lista6.append(\"d\")\n",
-        "lista6[0] = \"x\"\n",
-        "lista7.append(\"z\")\n",
-        "print(lista6)\n",
-        "print(lista7)\n",
-        "\n",
-        "#trabalhando com a lista8 & lista9 & listax & listay , operações de soma e multiplicação com listas\n",
-        "lista8 = [\"a\",\"b\",\"c\"]\n",
-        "lista9 = [\"d\",\"e\",\"f\"]\n",
-        "\n",
-        "#somando dus listas em uma nova\n",
-        "listax = lista8 + lista9\n",
-        "print(listax)\n",
-        "\n",
-        "#multiplicando uma lista em uma nova\n",
-        "listay = listax * 3\n",
-        "print(listay)\n",
-        "\n",
-        "#trabalahando com a lista 10, fatiamento\n",
-        "lista10 = [1,2,3,4,5,6,7,8,9,0]\n",
-        "print(lista10[2:5])\n",
+lista5.append('alo')
+print(lista4)
+print(lista5)
+        
+# trabalhando com a lista6 & lista7 , cópia independente
+lista6 = ["a","b","c"]
+print(lista6)
+lista7 = lista6[:]
+lista6.append("d")
+lista6[0] = "x"
+lista7.append("z")
+print(lista6),
+print(lista7)
+        
+#trabalhando com a lista8 & lista9 & listax & listay , operações de soma e multiplicação com listas
+lista8 = ["a","b","c"]
+lista9 = ["d","e","f"]
+        
+#somando dus listas em uma nova
+listax = lista8 + lista9
+print(listax)
+        
+#multiplicando uma lista em uma nova\n",
+listay = listax * 3
+print(listay)
+       
+#trabalahando com a lista 10, fatiamento\n",
+lista10 = [1,2,3,4,5,6,7,8,9,0]\n",
+print(lista10[2:5])\n",
         "print(lista10[:5])\n",
         "print(lista10[2:])\n",
         "# fatiamento com número negativo\n",
