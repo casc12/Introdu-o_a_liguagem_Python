@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM+exwl+YleZJ2RF7o/I8pG",
+      "authorship_tag": "ABX9TyOYps5aIyVDBpuwf1FVjk7n",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 6,
+      "execution_count": 16,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "Cbh9h9bc5Dln",
-        "outputId": "2d78240e-c942-46b1-96c8-60e0baa290ac"
+        "outputId": "2a8ef667-3df0-41bc-f8e5-9b552274b1fa"
       },
       "outputs": [
         {
@@ -88,11 +88,22 @@
             "[11, 22, 33, 44, 66, 77, 88, 99]\n",
             "[11, 22, 33, 66, 77, 88, 99]\n",
             "[11, 22, 33, 66, 99]\n",
-            "[]\n"
+            "[]\n",
+            "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]\n",
+            "[2, 4, 6, 8, 10, 12, 14, 16, 18]\n",
+            "20\n",
+            "[2, 4, 6, 8, 12, 14, 16, 18]\n",
+            "10\n",
+            "['a', 'b', 'c', 'd', 'e', 'f', 'g']\n",
+            "['a', 'b', 'c', 'e', 'f', 'g']\n",
+            "[1, 2, 6, 24, 120]\n",
+            "[1, 2, 3, 'quatro', 'cinco', 'seis']\n",
+            "3\n"
           ]
         }
       ],
       "source": [
+        "import math\n",
         "lista1 = [1,2,3,4,5]\n",
         "\n",
         "#chamando a lista1\n",
@@ -241,7 +252,36 @@
         "print(lista17)\n",
         "# voce poderia ultilizar del lista17[:] mas vou cololcar o Lista17.clear()\n",
         "lista17.clear()\n",
-        "print(lista17)"
+        "print(lista17)\n",
+        "\n",
+        "# ultilizando pop() com a lista18\n",
+        "lista18 = [2,4,6,8,10,12,14,16,18,20]\n",
+        "print(lista18)\n",
+        "v1 = lista18.pop()\n",
+        "print(lista18)\n",
+        "print(v1)\n",
+        "v2 = lista18.pop(4)\n",
+        "print(lista18)\n",
+        "print(v2)\n",
+        "\n",
+        "# ultilizando remove() com a lista19\n",
+        "lista19 = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\"]\n",
+        "print(lista19)\n",
+        "lista19.remove(\"d\")\n",
+        "print(lista19)\n",
+        "\n",
+        "#Criando uma lista partir de um exitente usando a biblioteca Math\n",
+        "lista20 = [1,2,3,4,5]\n",
+        "lista21 = [math.factorial(i) for i in lista20]\n",
+        "\n",
+        "print(lista21)\n",
+        "\n",
+        "# Usando um o métod index através de um elemento dentro de um lista\n",
+        "\n",
+        "lista22 = [1,2,3,\"quatro\",\"cinco\",\"seis\"]\n",
+        "print(lista22)\n",
+        "#vai retornar em qual poisição se encontra o elemento procurado\n",
+        "print(lista22.index(\"quatro\"))\n"
       ]
     }
   ]
