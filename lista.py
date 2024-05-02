@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPGMy0BDvEf/4biFuIVSAKT",
+      "authorship_tag": "ABX9TyM+exwl+YleZJ2RF7o/I8pG",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 16,
+      "execution_count": 6,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "Cbh9h9bc5Dln",
-        "outputId": "6c97ef6b-f086-4f92-8b93-70839f48b437"
+        "outputId": "2d78240e-c942-46b1-96c8-60e0baa290ac"
       },
       "outputs": [
         {
@@ -83,7 +83,12 @@
             "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
             "\n",
             "Comando\n",
-            "\n"
+            "\n",
+            "5\n",
+            "[11, 22, 33, 44, 66, 77, 88, 99]\n",
+            "[11, 22, 33, 66, 77, 88, 99]\n",
+            "[11, 22, 33, 66, 99]\n",
+            "[]\n"
           ]
         }
       ],
@@ -217,7 +222,26 @@
         "print(x)\n",
         "print(\"\\nComando\\n\")\n",
         "# ordem inversa numerica\n",
-        "#sorted(lista15, reverse= True)"
+        "sorted(lista15, reverse = True)\n",
+        "\n",
+        "#acessadno elementos da lista por index()\n",
+        "lista16 = [8,2,6,4,0,9,1,3,7,5]\n",
+        "print(lista16.index(9))\n",
+        "#print(lista16.index(10))\n",
+        "\n",
+        "# usando o comando del para remover um intem de lista\n",
+        "lista17 = [11,22,33,44,66,77,88,99]\n",
+        "print(lista17)\n",
+        "del lista17[3]\n",
+        "\n",
+        "print(lista17)\n",
+        "\n",
+        "del lista17[4:6]\n",
+        "\n",
+        "print(lista17)\n",
+        "# voce poderia ultilizar del lista17[:] mas vou cololcar o Lista17.clear()\n",
+        "lista17.clear()\n",
+        "print(lista17)"
       ]
     }
   ]
