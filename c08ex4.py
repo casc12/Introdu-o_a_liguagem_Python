@@ -1,185 +1,20 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyNIeH9s8WGVz4UQ96bNp3ER",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/casc12/Introdu-o_a_liguagem_Python/blob/Cap08/c08ex4.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 3,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "unkNnUqEvczw",
-        "outputId": "f17b05b3-dfe2-4fd4-aeb2-8952f5f1ec7d"
-      },
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "Leitura e apresentação de notas escolares\n",
-            "\n",
-            "Aluno:  1\n",
-            "\n",
-            "Informe a nota  1 do aluno  1:5\n",
-            "Informe a nota  2 do aluno  1:6\n",
-            "Informe a nota  3 do aluno  1:3\n",
-            "Informe a nota  4 do aluno  1:7\n",
-            "\n",
-            "Aluno:  2\n",
-            "\n",
-            "Informe a nota  1 do aluno  2:8\n",
-            "Informe a nota  2 do aluno  2:6\n",
-            "Informe a nota  3 do aluno  2:2\n",
-            "Informe a nota  4 do aluno  2:1\n",
-            "\n",
-            "Aluno:  3\n",
-            "\n",
-            "Informe a nota  1 do aluno  3:10\n",
-            "Informe a nota  2 do aluno  3:5\n",
-            "Informe a nota  3 do aluno  3:7\n",
-            "Informe a nota  4 do aluno  3:3\n",
-            "\n",
-            "Aluno:  4\n",
-            "\n",
-            "Informe a nota  1 do aluno  4:7\n",
-            "Informe a nota  2 do aluno  4:5\n",
-            "Informe a nota  3 do aluno  4:6\n",
-            "Informe a nota  4 do aluno  4:7\n",
-            "\n",
-            "Aluno:  5\n",
-            "\n",
-            "Informe a nota  1 do aluno  5:10\n",
-            "Informe a nota  2 do aluno  5:10\n",
-            "Informe a nota  3 do aluno  5:10\n",
-            "Informe a nota  4 do aluno  5:10\n",
-            "\n",
-            "Aluno:  6\n",
-            "\n",
-            "Informe a nota  1 do aluno  6:6\n",
-            "Informe a nota  2 do aluno  6:6\n",
-            "Informe a nota  3 do aluno  6:6\n",
-            "Informe a nota  4 do aluno  6:6\n",
-            "\n",
-            "Aluno:  7\n",
-            "\n",
-            "Informe a nota  1 do aluno  7:2\n",
-            "Informe a nota  2 do aluno  7:5\n",
-            "Informe a nota  3 do aluno  7:7\n",
-            "Informe a nota  4 do aluno  7:8\n",
-            "\n",
-            "Aluno:  8\n",
-            "\n",
-            "Informe a nota  1 do aluno  8:10\n",
-            "Informe a nota  2 do aluno  8:10\n",
-            "Informe a nota  3 do aluno  8:10\n",
-            "Informe a nota  4 do aluno  8:10\n",
-            "\n",
-            "As nostas do  1\n",
-            "\n",
-            "Nota 1 =   5.00\n",
-            "Nota 2 =   6.00\n",
-            "Nota 3 =   3.00\n",
-            "Nota 4 =   7.00\n",
-            "\n",
-            "As nostas do  2\n",
-            "\n",
-            "Nota 1 =   8.00\n",
-            "Nota 2 =   6.00\n",
-            "Nota 3 =   2.00\n",
-            "Nota 4 =   1.00\n",
-            "\n",
-            "As nostas do  3\n",
-            "\n",
-            "Nota 1 =  10.00\n",
-            "Nota 2 =   5.00\n",
-            "Nota 3 =   7.00\n",
-            "Nota 4 =   3.00\n",
-            "\n",
-            "As nostas do  4\n",
-            "\n",
-            "Nota 1 =   7.00\n",
-            "Nota 2 =   5.00\n",
-            "Nota 3 =   6.00\n",
-            "Nota 4 =   7.00\n",
-            "\n",
-            "As nostas do  5\n",
-            "\n",
-            "Nota 1 =  10.00\n",
-            "Nota 2 =  10.00\n",
-            "Nota 3 =  10.00\n",
-            "Nota 4 =  10.00\n",
-            "\n",
-            "As nostas do  6\n",
-            "\n",
-            "Nota 1 =   6.00\n",
-            "Nota 2 =   6.00\n",
-            "Nota 3 =   6.00\n",
-            "Nota 4 =   6.00\n",
-            "\n",
-            "As nostas do  7\n",
-            "\n",
-            "Nota 1 =   2.00\n",
-            "Nota 2 =   5.00\n",
-            "Nota 3 =   7.00\n",
-            "Nota 4 =   8.00\n",
-            "\n",
-            "As nostas do  8\n",
-            "\n",
-            "Nota 1 =  10.00\n",
-            "Nota 2 =  10.00\n",
-            "Nota 3 =  10.00\n",
-            "Nota 4 =  10.00\n",
-            "\n",
-            "Pressione <Enter> para encerrar...1\n"
-          ]
-        }
-      ],
-      "source": [
-        "notas = []\n",
-        "for linha in range(8):\n",
-        "  notas.append([])\n",
-        "  for coluna in range(4):\n",
-        "    notas[linha].append(float(0.0))\n",
-        "\n",
-        "# Entrada de notas escoares\n",
-        "print(\"Leitura e apresentação de notas escolares\")\n",
-        "for linha in range(8):\n",
-        "  print(\"\\nAluno: {:2}\\n\" .format(linha+ 1))\n",
-        "  for coluna in range(4):\n",
-        "    notas[linha][coluna] = float(input(\"Informe a nota {0:2} do aluno {1:2}:\" .format(coluna+1, linha+1)))\n",
-        "#Saída de notas escolares\n",
-        "for linha in range(8):\n",
-        "  print(\"\\nAs nostas do {:2}\\n\" .format(linha +1))\n",
-        "  for coluna in range(4):\n",
-        "    print(\"Nota {0:} = {1:6.2f}\" .format(coluna+1, notas[linha][coluna]))\n",
-        "\n",
-        "enter = input(\"\\nPressione <Enter> para encerrar...\")"
-      ]
-    }
-  ]
-}
+notas = []
+for linha in range(8):
+  notas.append([])
+  for coluna in range(4):
+    notas[linha].append(float(0.0))
+
+# Entrada de notas escoares
+print("Leitura e apresentação de notas escolares")
+for linha in range(8):
+  print("\nAluno: {:2}\n" .format(linha+ 1))
+  for coluna in range(4):
+    notas[linha][coluna] = float(input("Informe a nota {0:2} do aluno {1:2}:" .format(coluna+1, linha+1)))
+#Saída de notas escolares
+for linha in range(8):
+  print("\nAs nostas do {:2}\n" .format(linha +1))
+  for coluna in range(4):
+    print("Nota {0:} = {1:6.2f}" .format(coluna+1, notas[linha][coluna]))
+
+enter = input("\nPressione <Enter> para encerrar...")
+      
