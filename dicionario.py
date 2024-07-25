@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyO7K2r+H1SBKyGkpany3k2K",
+      "authorship_tag": "ABX9TyPjSL90B/bMjdPh/l8mqmQQ",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 10,
+      "execution_count": 18,
       "metadata": {
         "id": "u3HO42xrDssk",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "34bdf5de-e4c2-485a-bd51-0c4ff8aa6ddc"
+        "outputId": "ad681e9c-ee3d-4d99-a2a1-2659d72afbde"
       },
       "outputs": [
         {
@@ -44,16 +44,26 @@
             "carlos\n",
             "34\n",
             "superior\n",
-            "{'nome': 'carlos', 'idade': '34', 'escolaridade': 'superior'}\n"
+            "<class 'dict'>\n",
+            "{'nome': 'carlos', 'idade': 34, 'escolaridade': 'superior'}\n",
+            "{'nome': 'carlos', 'idade': 25, 'escolaridade': 'superior'}\n",
+            "carlos\n",
+            "None\n"
           ]
         }
       ],
       "source": [
-        "dicionario1 = {\"nome\":\"carlos\", \"idade\":\"34\", \"escolaridade\":\"superior\"}\n",
+        "dicionario1 = {\"nome\":\"carlos\", \"idade\":34, \"escolaridade\":\"superior\"}\n",
         "print(dicionario1[\"nome\"])\n",
         "print(dicionario1[\"idade\"])\n",
         "print(dicionario1[\"escolaridade\"])\n",
-        "print(dicionario1)\n"
+        "print(type(dicionario1))\n",
+        "print(dicionario1)\n",
+        "dicionario1[\"idade\"]= 25\n",
+        "print(dicionario1)\n",
+        "#print(dicionario1[\"altura\"])\n",
+        "print(dicionario1.get(\"nome\"))\n",
+        "print(dicionario1.get(\"altura\"))"
       ]
     }
   ]
